@@ -1,0 +1,131 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "windows.h"
+#include <commctrl.h>
+#define I_IMAGENONE                (-2)
+#define NOMENU                     0xFFFF
+#define  SHMENUBAR RCDATA
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENUBAR MENU 
+BEGIN
+    MENUITEM "Start",                       IDC_START
+    MENUITEM "Stop",                        IDC_STOP
+    MENUITEM "Save",                        IDC_SAVE
+    MENUITEM "ApiDump",                     IDC_DUMP_APIS
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Print intercepted info",      IDC_TRACE_INTERCEPTED
+        MENUITEM "Print Spy internal trace",    IDC_TRACE_SPY_BRIEF
+        MENUITEM "Print Spy detailed trace",    IDC_TRACE_SPY_DETAILED
+        MENUITEM SEPARATOR
+        MENUITEM "Output to memory buffer",     IDC_OUTPUT_MEM, GRAYED
+        MENUITEM "Output to debug monitor",     IDC_OUTPUT_DEBUG
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        IDC_OPTIONS_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_MENUBAR RCDATA 
+BEGIN
+    0x0065, 0x0005, 0xfffe, 0x9c41, 0x0004, 0x0010, 0x9c43, 0x0000, 0x0000, 
+    0xfffe, 0x9c44, 0x0004, 0x0010, 0x9c46, 0x0000, 0x0001, 0xfffe, 0x9c47, 
+    0x0004, 0x0010, 0x9c49, 0x0000, 0x0002, 0xfffe, 0x9c54, 0x0004, 0x0010, 
+    0x9c54, 0x0000, 0x0003, 0xfffe, 0x9c4c, 0x0004, 0x0018, 0x9c4e, 0x0000, 
+    0x0004
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""windows.h""\r\n"
+    "#include <commctrl.h>\r\n"
+    "#define I_IMAGENONE                (-2)\r\n"
+    "#define NOMENU                     0xFFFF\r\n"
+    "#define  SHMENUBAR RCDATA\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CAP_START           "Start"
+    IDS_CAP_STOP            "Stop"
+    IDS_CAP_SAVE            "Save"
+    IDS_CAP_OK              "OK"
+    IDS_CAP_OPTIONS         "Options"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CAP_DUMP_APIS       "ApiDump"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
